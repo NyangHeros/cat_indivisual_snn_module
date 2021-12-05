@@ -17,13 +17,13 @@ selections = [6, 7, 15, 18, 19, 29, 55, 57, 82, 152]
 img_size = 150
 
 # 5. 가중치 저장된 주소 : cat_indivisual_model_cl_weights 주소로 설정한다.
-weigh_path = r"C:\Users\ADD\OneDrive - dgu.ac.kr\DGU\Codes\FarmProject\models\cat_indivisual\cat_indivisual_model_cl_weights_211202_055623.h5"
+weigh_path = r"./weights/cat_indivisual_model_cl_weights.h5"
 
 # 6. CatSnn 객체 생성
 catSnn = CatSnn(num_classes=10, img_size = img_size, weighs_path = weigh_path)
 
 # 7. 테스트할 이미지 주소 설정 : 임의로 이미지 주소를 설정한다.
-img_path = r"C:\Users\ADD\OneDrive - dgu.ac.kr\DGU\Codes\FarmProject\cat_indivisual\test_img\0018_000.JPG"
+img_path = r"./test_img/0018_000.JPG"
 # img_path = r"C:\Users\ADD\OneDrive - dgu.ac.kr\DGU\Codes\FarmProject\FarmReferenceCodes\dbscan\dbscan_faces\ind_images\0003_002.JPG"
 
 # 8. archer 이미지 주소 설정 : 아쳐 이미지가 있는 폴더의 주소를 설정한다.
@@ -36,7 +36,7 @@ img_path = r"C:\Users\ADD\OneDrive - dgu.ac.kr\DGU\Codes\FarmProject\cat_indivis
 # :
 # └── 0152
 #     └── 0152_008.JPG
-archer_dir=r"C:\Users\ADD\OneDrive - dgu.ac.kr\DGU\Codes\FarmProject\cat_indivisual\archer_img\\"
+archer_dir=r"./archer_img/"
 
 # 9. 결과 예측
 # 9-1. 가장 유사한 고양이의 Id 받기 : predictId 함수 사용.
